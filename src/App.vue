@@ -32,10 +32,28 @@
 
 
 </template>
- <script></script>
+
+<script>
+import { reactive } from 'vue';
+export default {
+   
+  name: 'App',
+  component : {},
+  setup () {
+    const data = reactive({
+      boardList : [],
+    })
+  return {
+    data : data
+  }
+  }
+
+}
+</script>
 
 
 <style>
+/* 부트스트랩 사용 */
 @import "https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
